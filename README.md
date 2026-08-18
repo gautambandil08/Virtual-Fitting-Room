@@ -1,17 +1,8 @@
 # TryTrek — AI Real-Time Virtual Fitting Room
 
-> **Real-time AI-powered virtual clothing try-on** using **MediaPipe Pose**, **OpenCV**, and **FastAPI** with a clean humanized web interface.
+> **Real-time AI-powered virtual clothing try-on** using **MediaPipe Pose**, **OpenCV**, and **FastAPI**
 
 ---
-
-## ✨ Demo
-
-> 📹 *[Add your YouTube demo video link here]*
-> 
-> 🔗 *[Add your live public tunnel link here (localtunnel / ngrok)]*
-
----
-
 ## 🚀 Features
 
 - **Real-time body pose detection** using MediaPipe's 33 3D skeletal landmarks
@@ -89,17 +80,13 @@ pip install -r requirements.txt
 ### Run FastAPI application
 ```bash
 python main.py
-# Open: http://127.0.0.1:8000
 ```
 
 ### Get a public shareable link (localtunnel)
 ```bash
-# Install localtunnel (once)
 npm install -g localtunnel
 
-# While main.py is running:
 lt --port 8000
-# Copy the https://xxxx.loca.lt link
 ```
 
 ---
@@ -126,7 +113,7 @@ lt --port 8000
 
 ## 🙋 Author
 
-**[Your Name]**  
-📧 [your.email@gmail.com]  
-🔗 [linkedin.com/in/yourprofile]  
-💻 [github.com/yourusername]
+**[Gautam Bandil]**  
+📧 [gautam.bandil01@gmail.com]  
+🔗 [https://www.linkedin.com/in/gautambandil/]  
+💻 [https://github.com/gautambandil08]
