@@ -82,15 +82,6 @@ pip install -r requirements.txt
 python main.py
 ```
 
-### Get a public shareable link (localtunnel)
-```bash
-npm install -g localtunnel
-
-lt --port 8000
-```
-
----
-
 ## 📡 API Endpoints
 
 | Method | Endpoint | Description |
