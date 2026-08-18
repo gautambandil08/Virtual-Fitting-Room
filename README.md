@@ -105,6 +105,6 @@ python main.py
 ## 🙋 Author
 
 **[Gautam Bandil]**  
-📧 [gautam.bandil01@gmail.com]  
-🔗 [https://www.linkedin.com/in/gautambandil/]  
-💻 [https://github.com/gautambandil08]
+Gmail: [gautam.bandil01@gmail.com]  
+Linkedin: [https://www.linkedin.com/in/gautambandil/]  
+Github: [https://github.com/gautambandil08]
