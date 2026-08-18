@@ -1,6 +1,5 @@
 # TryTrek — AI Real-Time Virtual Fitting Room
 ---
-
 ### ⏱️ Overview:
 1. **Live Camera Feed**: Standard webcam input processed at 30+ FPS via persistent video stream manager.
 2. **Pose Landmark Alignment**: MediaPipe tracks 33 3D body points to compute shoulder width and torso height dynamically.
