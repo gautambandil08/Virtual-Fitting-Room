@@ -1,11 +1,3 @@
-"""
-TryTrek Virtual Fitting Room - Performance Benchmark Suite
-===========================================================
-Measures and verifies optimization impact:
-1. Camera Initialization (Unoptimized repeated open vs Singleton CameraStreamManager)
-2. Frame Processing & Alpha Blending Latency
-"""
-
 import time
 import cv2
 import numpy as np
