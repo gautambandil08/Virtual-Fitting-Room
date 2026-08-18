@@ -1,6 +1,6 @@
 # TryTrek — AI Real-Time Virtual Fitting Room
 ---
-### ⏱️ Overview:
+###  1. Overview:
 1. **Live Camera Feed**: Standard webcam input processed at 30+ FPS via persistent video stream manager.
 2. **Pose Landmark Alignment**: MediaPipe tracks 33 3D body points to compute shoulder width and torso height dynamically.
 3. **Instant Try-On**: Select any shirt from the UI grid. A lightweight REST call (`/select_clothing`) swaps garments in RAM without stopping or restarting the stream.
@@ -8,7 +8,7 @@
 
 ---
 
-## 📐 2. Architecture Diagram
+##  2. Architecture Diagram
 
 ```
                 ┌─────────────┐
@@ -36,7 +36,7 @@
 
 ---
 
-## 🧪 3. Comprehensive Test Suite
+##  3. Comprehensive Test Suite
 
 TryTrek includes a production-grade automated test suite built with `pytest` and `fastapi.testclient.TestClient`.
 
@@ -55,7 +55,7 @@ pytest -v tests/
 
 ---
 
-## 🔄 4. Continuous Integration (CI/CD Pipeline)
+##  4. Continuous Integration (CI/CD Pipeline)
 
 Automated GitHub Actions workflow (`.github/workflows/ci.yml`) runs automatically on every `push` and `pull_request`:
 
@@ -73,7 +73,7 @@ push / PR
 
 ---
 
-## ⚡ 5. Engineering Performance Benchmark
+##  5. Engineering Performance Benchmark
 
 By replacing repeated OpenCV DirectShow camera driver re-initialization with a persistent **Singleton Camera Manager**, cold-start startup delay was eliminated:
 
@@ -90,7 +90,7 @@ python benchmark.py
 
 ---
 
-## 🚀 Features
+##  Features
 
 - **33 3D Landmark Tracking**: MediaPipe Pose extracts accurate shoulder & hip coordinates.
 - **Zero-Stream-Interruption Swaps**: REST API state update protected by thread-safe `threading.Lock()`.
@@ -100,7 +100,7 @@ python benchmark.py
 
 ---
 
-## 🛠️ Tech Stack & Dependencies
+## Tech Stack & Dependencies
 
 | Package | Version | Purpose in Codebase |
 |---|---|---|
@@ -114,7 +114,7 @@ python benchmark.py
 
 ---
 
-## ⚙️ Quick Start
+##  Quick Start
 
 ### 1. Clone Repository & Install Dependencies
 ```bash
@@ -140,7 +140,7 @@ python benchmark.py
 
 ---
 
-## 📡 API Reference
+##  API Reference
 
 | Method | Endpoint | Description |
 |---|---|---|
@@ -151,8 +151,9 @@ python benchmark.py
 
 ---
 
-## 👨‍💻 Author
+##  Author
 
 **Gautam Bandil**  
 - GitHub: [@gautambandil08](https://github.com/gautambandil08)  
 - Project Repository: [Virtual-Fitting-Room](https://github.com/gautambandil08/Virtual-Fitting-Room)
+- Gmail: [gautam.bandil01@gmail.com]
