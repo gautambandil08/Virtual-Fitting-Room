@@ -141,3 +141,4 @@ python benchmark.py
 - GitHub: [@gautambandil08](https://github.com/gautambandil08)  
 - Project Repository: [Virtual-Fitting-Room](https://github.com/gautambandil08/Virtual-Fitting-Room)
 - Gmail: [gautam.bandil01@gmail.com]
+- Linkedin: [https://www.linkedin.com/in/gautambandil/]
