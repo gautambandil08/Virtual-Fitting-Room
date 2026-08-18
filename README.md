@@ -2,7 +2,7 @@
 ---
 ###  1. Overview:
 1. **Live Camera Feed**: Standard webcam input processed at 30+ FPS via persistent video stream manager.
-2. **Pose Landmark Alignment**: MediaPipe tracks 33 3D body points to compute shoulder width and torso height dynamically.
+2. **Pose Landmark Alignment**: MediaPipe tracks 33 body points to compute shoulder width and torso height dynamically.
 3. **Instant Try-On**: Select any shirt from the UI grid. A lightweight REST call (`/select_clothing`) swaps garments in RAM without stopping or restarting the stream.
 4. **Alpha Matrix Compositing**: Custom OpenCV + NumPy linear interpolation overlays semi-transparent PNG garments smoothly onto torso coordinates.
 
