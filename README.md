@@ -126,30 +126,14 @@ pip install -r requirements.txt
 ### 2. Run Main Application
 ```bash
 python main.py
-# Access dashboard at: http://127.0.0.1:8000
 ```
 
 ### 3. Run Verification & Benchmarks
 ```bash
-# Run test suite
-pytest -v tests/
 
-# Run benchmark script
+pytest -v tests/
 python benchmark.py
 ```
-
----
-
-##  API Reference
-
-| Method | Endpoint | Description |
-|---|---|---|
-| `GET` | `/` | Main interactive virtual fitting mirror studio UI |
-| `GET` | `/video_feed` | Live MJPEG camera & clothing overlay stream |
-| `POST` | `/select_clothing?clothing=Blue-t-shirt` | Switch garment live without stream drop |
-| `POST` | `/toggle_skeleton` | Toggle MediaPipe pose skeleton guide overlay |
-
----
 
 ##  Author
 
