@@ -1,0 +1,81 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.egg-info/
+dist/
+build/
+.eggs/
+*.egg
+
+# Virtual environments
+venv/
+.env/
+env/
+
+# IDE & Editor
+.idea/
+.vscode/
+*.suo
+*.user
+
+# Node
+node_modules/
+package-lock.json
+
+# Sensitive & secrets
+client_secret_*.json
+*.env
+.env
+
+# Executables
+*.exe
+
+# Temp / scratch files
+backup.txt
+ecom.txt
+example.jl
+*.txt
+
+# Old/unused HTML experiments
+apk.html
+apk.css
+apk.js
+dudex.html
+trial.html
+tryon.html
+sub.html
+sub.css
+index.html
+virtual.html
+virtual.css
+women.html
+
+# Old/unused Python experiments
+experiment.py
+hit.py
+kinter.py
+new.py
+night.py
+try.py
+
+# Old JS
+main.js
+men.js
+nginx.conf
+
+# Large image assets not core to the app
+ar.png
+Leonardo_Phoenix_A_diverse_group_of_people_including_individua_0.jpg
+135967035968846812man_in_sunglasses2-removebg-preview.png
+Girls2.png
+girls_1.png
+
+# Other unused dirs
+jeelizGlassesVTOWidget-master/
+templates/
+
+# OS
+.DS_Store
+Thumbs.db
