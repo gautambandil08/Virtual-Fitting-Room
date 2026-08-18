@@ -1,15 +1,10 @@
 # TryTrek — AI Real-Time Virtual Fitting Room
 
-> **Production-grade AI-powered virtual clothing mirror** built with **MediaPipe Pose**, **OpenCV**, **NumPy**, and **FastAPI**. Real-time 3D landmark body tracking with instant RGBA clothing compositing and zero-latency garment switching.
+> **Production-grade AI-powered virtual clothing mirror** built with **MediaPipe Pose**, **OpenCV**, **NumPy**, and **FastAPI**. 
 
 ---
 
-## 📹 1. Demo & Recruiter 20-Second Overview
-
-> 🎬 **[Watch 20-Second Live Video Demo]** *(Link your YouTube / Loom video here)*  
-> 🌐 **[Try Live Interactive Mirror]** *(Link your Ngrok / Localtunnel live deployment here)*
-
-### ⏱️ How to understand TryTrek in 20 seconds:
+### ⏱️ Overview:
 1. **Live Camera Feed**: Standard webcam input processed at 30+ FPS via persistent video stream manager.
 2. **Pose Landmark Alignment**: MediaPipe tracks 33 3D body points to compute shoulder width and torso height dynamically.
 3. **Instant Try-On**: Select any shirt from the UI grid. A lightweight REST call (`/select_clothing`) swaps garments in RAM without stopping or restarting the stream.
