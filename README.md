@@ -1,7 +1,4 @@
 # TryTrek — AI Real-Time Virtual Fitting Room
-
-> **Production-grade AI-powered virtual clothing mirror** built with **MediaPipe Pose**, **OpenCV**, **NumPy**, and **FastAPI**. 
-
 ---
 
 ### ⏱️ Overview:
