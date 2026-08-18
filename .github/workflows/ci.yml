@@ -1,0 +1,46 @@
+name: CI / CD Pipeline
+
+on:
+  push:
+    branches: [ main, master ]
+  pull_request:
+    branches: [ main, master ]
+
+jobs:
+  ci-pipeline:
+    name: Lint, Test, Build & Security Scan
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Set up Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: "pip"
+
+      - name: Install Dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Step 1 - Linting Check (Flake8)
+        run: |
+          # Stop build if there are Python syntax errors or undefined names
+          flake8 . --count --select=E9,F63,F7,F82 --show-source --statistics
+          # Complexity & formatting warnings
+          flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
+
+      - name: Step 2 - Run Unit & Integration Tests (Pytest)
+        run: |
+          pytest -v tests/
+
+      - name: Step 3 - Build Verification & Syntax Compilation
+        run: |
+          python -m py_compile main.py virtual_try_on.py benchmark.py
+
+      - name: Step 4 - Security Vulnerability Scan (Bandit)
+        run: |
+          bandit -r main.py virtual_try_on.py -ll -ii
